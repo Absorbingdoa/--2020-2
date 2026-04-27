@@ -281,7 +281,7 @@ function Sky(id)
 		AddMesh(skyPart)
 		SetMesh(skyPart, "111891702759441")
 		SetTexture(skyPart, id)
-		MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+		MeshResize(skyPart, Vector3.new(10000, 10000, 10000))
 		SetLocked(skyPart, true)
 		SetAnchor(true, skyPart)
 	end
