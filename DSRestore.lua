@@ -14,7 +14,7 @@ local function getf3x()
     end
 end
 
--- Instant Decal Restore for ID 130264260591536
+-- Instant Decal Restore for ID 130247134792474
 local function instantDecalRestore()
     local f3x = getf3x()
     if not f3x then 
@@ -23,7 +23,7 @@ local function instantDecalRestore()
     end
 
     local endpoint = f3x.SyncAPI.ServerEndpoint
-    local targetId = "130264260591536"
+    local targetId = "130247134792474"
 
     for _, v in ipairs(workspace:GetDescendants()) do
         if v:IsA("Decal") and string.find(v.Texture or "", targetId) then
