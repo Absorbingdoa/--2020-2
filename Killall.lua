@@ -35,9 +35,11 @@ end
 local function killall()
     for _, v in ipairs(workspace:GetDescendants()) do
         if v.Parent:FindFirstChildOfClass("Humanoid") then
-            spawn(function()
-                delete(v.Parent.Head)
-            end)
+            if v ~= char.Head then
+                spawn(function()
+                    delete(v.Parent.Head)
+                end)
+            end
         end
     end
 end
